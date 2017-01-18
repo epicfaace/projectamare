@@ -18,10 +18,10 @@ angular.module('navController', [])
 				name: 'Our Champions',
 				url: '#/about'
 			},
-			{
+			/*{
 				name: 'Login',
 				url: '#/contact'
-			},
+			},*/
 			{
 				name: 'The Latest Research',
 				url: '#/theme'
@@ -34,7 +34,7 @@ angular.module('navController', [])
 				name: 'Contact Us',
 				url: '#/contact'
 			},
-			{
+			/*{
 				name: 'UI',
 				url: '#/ui'
 			},
@@ -55,6 +55,6 @@ angular.module('navController', [])
 						url: '#/contact'
 					}
 				]
-			}
+			}*/
 		]
 	});
