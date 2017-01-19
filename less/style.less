@@ -68,13 +68,17 @@ to prevent collapsing during animation*/
 
 .jumbotron {
   background-image: url(/img/splash2.png);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   color: black;
 
   .container {
   width: 50%;
-  background: #ddd;
-  opacity: 0.8;
+  background: #307f65;
+  background-color: #555;
+  color: white;
+  opacity: .9;
 
   h1 {
   font-size: 30pt;
@@ -84,6 +88,7 @@ to prevent collapsing during animation*/
   .btn {
   margin-top: 20px;
   display: block;
+  margin: auto;
   width: 40%;
   }
   }

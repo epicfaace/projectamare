@@ -56,6 +56,7 @@
     "bootstrap": "^3.3.2",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-install": "^0.2.0",
     "gulp-less": "^3.0.1",
     "gulp-minify-css": "^0.4.6",

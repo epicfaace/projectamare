@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var server = require('gulp-server-livereload');
 var install = require("gulp-install");
 var run = require('gulp-run');
+var deploy      = require('gulp-gh-pages');
 
 var devServerHost = 'localhost'; //require('ip').address();
 
@@ -148,3 +149,8 @@ gulp.task('build', ['less'], function(done) {
 });
 
 gulp.task('default', ['watch', 'server']);
+
+gulp.task('deploy', function () {
+  return gulp.src("./www/**/*")
+    .pipe(deploy())
+});
