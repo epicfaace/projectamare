@@ -8,6 +8,7 @@ var server = require('gulp-server-livereload');
 var install = require("gulp-install");
 var run = require('gulp-run');
 var deploy      = require('gulp-gh-pages');
+var shell = require('gulp-shell');
 
 var devServerHost = 'localhost'; //require('ip').address();
 
@@ -151,6 +152,5 @@ gulp.task('build', ['less'], function(done) {
 gulp.task('default', ['watch', 'server']);
 
 gulp.task('deploy', function () {
-  return gulp.src("./www/**/*")
-    .pipe(deploy())
+  return shell(['backand sync --app projectamare --master 1c6c1d40-750d-4b4d-92e0-bd78018b1dca --user 3e65df0f-dc92-11e6-992f-0e949b6db9c0 --folder /www'])
 });
