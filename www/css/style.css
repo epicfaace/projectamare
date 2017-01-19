@@ -1,0 +1,83 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+jumbotron li {
+  font-size: 21px;
+}
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+[ui-view] {
+  height: 65px;
+}
+.ui-view-container {
+  position: relative;
+}
+/*
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+*/
+.jumbotron {
+  background-image: url(/img/splash2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: black;
+}
+.jumbotron .container {
+  width: 50%;
+  background: #307f65;
+  background-color: #555;
+  color: white;
+  opacity: .9;
+}
+.jumbotron .container h1 {
+  font-size: 30pt;
+  font-weight: bold;
+}
+.jumbotron .container .btn {
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
