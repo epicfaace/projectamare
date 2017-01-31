@@ -468,18 +468,11 @@ to prevent collapsing during animation*/
 }
 
 */
-.jumbotron {
-  background-image: url(../img/amare-compressed.jpg);
-  background-size: 100% auto;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-color: white;
-  background-position: top;
-  color: black;
-  text-align: center;
-  color: white;
-  margin: auto;
+html,
+body,
+.ui-view-container,
+.ui-view-container > div {
+  height: 100%;
 }
 .jumbotron .container {
   width: 50%;
@@ -499,22 +492,35 @@ to prevent collapsing during animation*/
   margin: auto;
   width: 40%;
 }
-.jumbotron .overlay:after {
-  content: '\A';
-  position: absolute;
+.jumbotron {
+  background-image: url(../img/amare-compressed.jpg);
+  background-size: contain;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
+  min-height: 600px;
+  background-repeat: repeat;
+  background-color: white;
+  background-position: top;
+  color: black;
+  text-align: center;
+  color: white;
+  margin: auto;
 }
 img.icon {
   width: 60%;
   height: 60%;
   margin: auto;
   display: inline-block;
+}
+img.img-portfolio {
+  width: 60%;
+  margin: auto;
+}
+.howwork {
+  background-image: url(/img/background-howwork.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 20%;
+  width: 100vw;
+  margin-left: -27vw;
 }
