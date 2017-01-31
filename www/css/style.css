@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 html,
 body {
   height: 100%;
@@ -330,54 +331,6 @@ fieldset[disabled] .btn-default.active {
   color: white;
   background-color: #222222;
 }
-.btn-primary {
-  color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
-}
-.btn-primary .badge {
-  color: #F05F40;
-  background-color: white;
-}
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
@@ -411,13 +364,11 @@ body {
 }
 body {
   padding-top: 50px;
+  font-family: "Droid Sans", sans-serif;
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
-}
-jumbotron li {
-  font-size: 21px;
 }
 /* Have to set height explicity on ui-view
 to prevent collapsing during animation*/
@@ -474,19 +425,27 @@ body,
 .ui-view-container > div {
   height: 100%;
 }
-.jumbotron .container {
-  width: 50%;
-  background: #307f65;
-  background-color: #aad;
-  color: white;
-  opacity: .9;
-  position: relative;
+.whatIsDiv,
+.howWorkDiv {
+  background: rgba(240, 240, 240, 0.9);
+  color: black;
+  margin-bottom: 5%;
 }
-.jumbotron .container h1 {
-  font-size: 30pt;
+.whatIsDiv h1,
+.howWorkDiv h1 {
+  font-size: 40pt;
   font-weight: bold;
 }
-.jumbotron .container .btn {
+.whatIsDiv h2,
+.howWorkDiv h2 {
+  font-size: 20pt;
+}
+.whatIsDiv p,
+.howWorkDiv p {
+  font-size: 12pt;
+}
+.whatIsDiv .btn,
+.howWorkDiv .btn {
   margin-top: 20px;
   display: block;
   margin: auto;
@@ -519,8 +478,15 @@ img.img-portfolio {
 .howwork {
   background-image: url(/img/background-howwork.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding-bottom: 20%;
+  background-size: cover;
+  padding: 2% 0;
   width: 100vw;
-  margin-left: -27vw;
+  margin-left: -5vw;
+}
+.howWorkDiv {
+  color: black;
+  background: rgba(200, 200, 230, 0.9);
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
 }

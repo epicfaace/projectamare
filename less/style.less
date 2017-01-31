@@ -1,17 +1,16 @@
 //@import (less) "../node_modules/lesshat/build/lesshat.less";
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 @import "creative.less";
 
 body {
     padding-top: 50px;
+    font-family: "Droid Sans", sans-serif;
 }
 .starter-template {
     padding: 40px 15px;
     text-align: center;
 }
 
-jumbotron li {
-  font-size: 21px;
-}
 
 
 /* Have to set height explicity on ui-view
@@ -69,17 +68,21 @@ to prevent collapsing during animation*/
 html, body, .ui-view-container, .ui-view-container > div {
   height: 100%;
 }
-  .jumbotron .container {
-  width: 50%;
-  background: #307f65;
-  background-color: #aad;
-  color: white;
-  opacity: .9;
-  position: relative;
+
+  .whatIsDiv, .howWorkDiv {
+  background: rgba(240, 240, 240, 0.9);
+  color: black;
+  margin-bottom: 5%;
 
       h1 {
-      font-size: 30pt;
+      font-size: 40pt;
       font-weight: bold;
+      }
+      h2 {
+      font-size: 20pt;
+      }
+      p {
+      font-size: 12pt;
       }
 
       .btn {
@@ -122,12 +125,16 @@ img.img-portfolio {
 .howwork {
   background-image: url(/img/background-howwork.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  padding-bottom: 20%;
+  background-size: cover;
+  padding: 2% 0;
   width: 100vw;
-  margin-left: -27vw;
+  margin-left: -5vw;
 }
 
 .howWorkDiv {
-  &:extend(.container);
+  color: black;
+  background: rgba(200,200,230,.9);
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
 }
