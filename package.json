@@ -66,6 +66,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-run": "^1.6.6",
     "gulp-server-livereload": "^1.1.0",
+    "gulp-shell": "^0.5.2",
     "gulp-uglifyjs": "^0.6.0",
     "html5shiv": "^3.7.2",
     "ip": "^0.3.2",

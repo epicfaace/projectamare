@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var path = require('path')
-routes = function(req, res){
+routes = = function(req, res){
   res.render('layout');
 };
 
